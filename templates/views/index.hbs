@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/Weather.png">
+        <link rel="stylesheet" href="./css/styles.css">
+        {{!-- <script>
+            const enterText = ()=>{
+                let label = document.getElementById('view');
+                let text = document.getElementById('txtBox').value;
+
+                label.innerHTML = text;
+            }
+        </script> --}}
+    </head>
+    <body>
+        <div class="container">
+            {{>headers}}
+            <form>
+                <input placeholder="Enter location">
+                <button>Search</button>
+            </form>
+            <p id="message1"></p>
+            <p id="message2"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/script.js"></script>
+    </body>
+</html>
